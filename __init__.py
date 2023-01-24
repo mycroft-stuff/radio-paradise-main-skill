@@ -10,6 +10,7 @@ class RadioParadiseMain(MycroftSkill):
     def handle_main_paradise_radio(self, message):
         self.speak_dialog('main.paradise.radio')
         self.audio_service = AudioService(self.bus)
+        sleep(1)
         self.audio_service.play('http://stream.radioparadise.com/mp3-320')
         
 
